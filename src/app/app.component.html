@@ -1,0 +1,9 @@
+<div class="container">
+  <label for="ticker">Enter the Ticker:</label>
+  <input id="ticker" type="text" #inputValue />
+  <button (click)="onClick(inputValue.value)">Click</button>
+  <p>{{ input }}</p>
+</div>
+<div>
+  <app-stock [tickerValue]="input"></app-stock>
+</div>
