@@ -8,7 +8,8 @@ import { retry, catchError } from 'rxjs/operators';
 export class StockService {
   endpoint: string =
     'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=';
-  apikey: string = '&apikey=75SILTV90V0SAI22';
+  //apikey: string = '&apikey=75SILTV90V0SAI22';
+  apikey: string = 'U022VZ08SDBYODGU';
   constructor(private http: HttpClient) {}
 
   getStock(symbol: string): Observable<Stock> {
